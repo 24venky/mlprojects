@@ -1,0 +1,10 @@
+import pandas as p
+data=p.read_csv("simple_data.csv")
+print("data imported from csv")
+print(data.head())
+Excel_data=p.read_excel("simple_data.xlsx")
+print(excel_data.head())
+data.to_csv("Exposed_data.csv",index=False)
+print("\n data exported to 'Exported_data.csv 'successfully")
+data_Excel("exported_data .xlsx",index=False)
+print("data exported to 'exported_data_xlsx ' successfully")
